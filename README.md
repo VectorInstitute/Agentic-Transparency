@@ -7,7 +7,10 @@
 
 🔥 **[Paper Link](link-to-paper)** 🔥
 
-![Transparency Gap](assets/transparency-gap.png)
+<div align="center">
+  <img src="assets/transparency-gap.png" alt="Transparency Gap" width="90%"/>
+  <p><em><b>Figure 1:</b> The transparency gap in agentic AI. (a) Market growth projection shows agentic AI deployment outpacing XAI tooling by 6× by 2034. (b) Growth rates confirm the asymmetry in both market and research output. (c) Enterprise adoption reveals a stark gap between intent (90%) and deployment at scale (2%). (d) Sectors with highest adoption (BFSI, Healthcare, Government) also face the strictest transparency requirements.</em></p>
+</div>
 
 ---
 
@@ -51,7 +54,10 @@ This repository accompanies our survey paper **"Agentic Transparency: A Practica
 
 ## 🏗️ The X-AXIOM Framework
 
-![X-AXIOM Framework](assets/framework-overview.png)
+<div align="center">
+  <img src="assets/framework-overview.png" alt="X-AXIOM Framework" width="95%"/>
+  <p><em><b>Figure 4:</b> The X-AXIOM taxonomy for agentic transparency. The framework organizes transparency along five core axes: Cognitive Objects (WHAT is exposed), Assurance Objectives (WHY transparency is needed), Mechanisms (HOW transparency is achieved), Temporal Stages (WHEN in the lifecycle), and Stakeholders (WHO requires transparency). Extensions address multi-agent coordination, the Minimal Explanation Packet (MEP), and alignment with governance frameworks.</em></p>
+</div>
 
 X-AXIOM structures agentic transparency along **five complementary axes**:
 
@@ -108,7 +114,10 @@ A standardized, cryptographically-signed record containing:
 
 ## 💡 What Makes X-AXIOM Different?
 
-![Positioning](assets/related-work.png)
+<div align="center">
+  <img src="assets/related-work.png" alt="Positioning" width="85%"/>
+  <p><em><b>Figure 2:</b> Positioning of X-AXIOM relative to existing literature. Prior work clusters in two regions: XAI/interpretability surveys focused on static models (left), and agentic AI surveys with limited transparency coverage (bottom-right). X-AXIOM occupies the intersection, addressing transparency challenges specific to agentic systems.</em></p>
+</div>
 
 Prior surveys fall into two non-overlapping groups:
 - **XAI/Interpretability surveys** focus on static models (left side of chart)
