@@ -1,9 +1,9 @@
 # Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance
 
-[![Paper](https://img.shields.io/badge/Paper-ACM-blue)]()
-[![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
+<!-- [![Paper](https://img.shields.io/badge/Paper-ACM-blue)]() -->
+<!-- [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX) -->
 
-🔥 **[Paper Link](link-to-paper)** 🔥
+<!--🔥 **[Paper Link](link-to-paper)** 🔥-->
 
 <div align="center">
   <img src="assets/transparency-gap.jpg" alt="Transparency Gap" width="90%"/>
@@ -24,11 +24,16 @@ This repository accompanies our survey paper **"Agentic Transparency: A Practica
 
 ## 📄 Survey Paper
 
-**Title:** Agentic Transparency: A Practical Taxonomy for Interpretability and Explainability (X-AXIOM)  
-**Authors:** [Author Names]  
-**Institutions:** [Institution Names]  
-**Published:** ACM [Conference/Journal] 2025  
-**Link:** [Paper URL](link-to-paper)
+**Shaina Raza**¹, **Ahmed Y. Radwan**¹, **Sindhu Chaduvula**¹, **Mahshid Alinoori**¹, **Christos Emmanouilidis**²
+
+¹Vector Institute for Artificial Intelligence  
+²University of Groningen
+
+<!-- #ACM Computing Surveys, 2025 -->
+<!-- TODO: Update paper link once published -->
+<!-- TODO: Update arXiv number: currently XXXX.XXXXX -->
+
+<!--  **Links:** [Paper](link-to-paper) | [arXiv](https://arxiv.org/abs/XXXX.XXXXX) -->
 
 ---
 
@@ -521,19 +526,9 @@ This is a **living repository**. We actively welcome contributions as agentic tr
 
 # 📜 Citation
 
-If you find X-AXIOM useful in your research, please cite:
-
+If you find this survey useful in your research, please cite:
 ```bibtex
-@article{authors2025xaxiom,
-  title={Agentic Transparency: A Practical Taxonomy for Interpretability and Explainability (X-AXIOM)},
-  author={Author, First and Author, Second},
-  journal={ACM Journal Name},
-  volume={37},
-  number={4},
-  pages={1--36},
-  year={2025},
-  publisher={ACM},
-  doi={XXXXXXX.XXXXXXX}
+placeholder
 }
 ```
 
@@ -542,13 +537,15 @@ If you find X-AXIOM useful in your research, please cite:
 # 📧 Contact
 
 **Authors:**
-- First Author Name - email@institution.edu
-- Second Author Name - email@institution.edu
+- Shaina Raza - shaina.raza@vectorinstitute.ai
+- Ahmed Y. Radwan - ahmed.radwan@vectorinstitute.ai
+- Sindhu Chaduvula - sindhuja.chaduvula@vectorinstitute.ai
+- Mahshid Alinoori - mahshid.alinoori@vectorinstitute.ai
+- Christos Emmanouilidis - c.emmanouilidis@rug.nl
 
 **Questions?** Open an issue or email us directly.
 
 **Collaboration?** We're interested in partnerships on agentic transparency research!
-
 ---
 
 # 📋 License
@@ -559,16 +556,13 @@ This repository is licensed under the MIT License - see LICENSE file for details
 
 # 🙏 Acknowledgments
 
-We thank the research community for valuable feedback. This work builds on foundational contributions in interpretability, explainability, agentic AI architectures, and AI governance.
+Resources used in preparing this research were provided, in part, by the Province of Ontario, the Government of Canada through CIFAR, and companies sponsoring the Vector Institute. This work was funded by the European Union's Horizon Europe research and innovation programme under the AIXPERT project (Grant Agreement No. 101214389).
 
-Special thanks to reviewers and early adopters of the X-AXIOM framework.
-
+We thank the research community for valuable feedback and the reviewers for their thoughtful comments.
 ---
 
 <div align="center">
 
-**[⬆ Back to Top](#x-axiom-agentic-transparency)**
-
-Made with care by the X-AXIOM Research Team
+**[⬆ Back to Top](#transparency-in-agentic-ai-a-survey-of-interpretability-explainability-and-governance)**
 
 </div>
