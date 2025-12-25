@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive survey of interpretability, explainability, and governance for LLM-based agentic AI systems">
+    <title>Transparency in Agentic AI | A Survey</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Crimson+Pro:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/vector-logo.jpg" alt="Vector Institute">
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#taxonomy">Taxonomy</a></li>
+                <li><a href="#findings">Findings</a></li>
+                <li><a href="#citation">Citation</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transparency in Agentic AI</h1>
+            <h2>A Survey of Interpretability, Explainability, and Governance</h2>
+            
+            <div class="authors">
+                <p>
+                    <a href="https://scholar.google.com/citations?user=chcz7RMAAAAJ&hl=en" target="_blank">Shaina Raza</a><sup>1</sup>, 
+                    Ahmed Y. Radwan<sup>1</sup>, 
+                    Sindhu Chaduvula<sup>1</sup>, 
+                    Mahshid Alinoori<sup>1</sup>, 
+                    Christos Emmanouilidis<sup>2</sup>
+                </p>
+                <p class="affiliations">
+                    <sup>1</sup>Vector Institute &nbsp;&nbsp; <sup>2</sup>University of Groningen
+                </p>
+            </div>
+
+            <div class="hero-buttons">
+                <a href="https://arxiv.org/abs/XXXXXXX" class="btn btn-primary" target="_blank">Paper</a>
+                <a href="https://github.com/VectorInstitute/Agentic-Transparency" class="btn btn-secondary" target="_blank">Code</a>
+                <a href="#citation" class="btn btn-secondary">BibTeX</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Abstract -->
+    <section id="abstract" class="section">
+        <div class="container">
+            <h2 class="section-title">Abstract</h2>
+            <div class="content">
+                <p>
+                    Agentic AI systems—LLM-based agents with planning, memory, and tool use—introduce transparency challenges that are poorly served by explainability methods designed for single-step predictions. This article surveys and synthesizes interpretability and explainability techniques relevant to agentic behavior across the agent lifecycle.
+                </p>
+                <p>
+                    We organize this survey using a <strong>five-axis taxonomy</strong> that categorizes prior work by (i) cognitive objects being inspected, (ii) assurance objectives being targeted, (iii) mechanisms employed, (iv) lifecycle stages, and (v) stakeholders served.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gap -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">The Transparency Gap</h2>
+            <div class="content">
+                <p>
+                    Global Agentic AI market projections indicate that deployment is outpacing XAI tooling by approximately <strong>6× by 2034</strong>. The sectors driving adoption—banking, healthcare, government—face the strictest transparency requirements.
+                </p>
+                <figure>
+                    <img src="images/figure2.jpg" alt="Transparency gap analysis">
+                    <figcaption><strong>Figure 2:</strong> The Transparency Gap showing market growth, research asymmetry, enterprise adoption, and sectoral requirements.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Positioning -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Literature Positioning</h2>
+            <div class="two-col">
+                <div>
+                    <p>Prior surveys fall into two non-overlapping groups: XAI surveys focused on static models, and Agentic AI surveys with limited transparency coverage.</p>
+                    <p><strong>This survey bridges these strands</strong> by providing unified treatment of explainability and interpretability for LLM-based agentic systems.</p>
+                </div>
+                <figure>
+                    <img src="images/figure3.jpg" alt="Survey positioning">
+                    <figcaption><strong>Figure 3:</strong> This survey occupies the intersection of XAI and Agentic AI research.</figcaption>
+                </figure>
+            </div>
+            <figure class="full-width">
+                <img src="images/figure4.jpg" alt="Evolution timeline">
+                <figcaption><strong>Figure 4:</strong> Evolution showing the "transparency gap" period (2022–present).</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Taxonomy -->
+    <section id="taxonomy" class="section bg-dark">
+        <div class="container-wide">
+            <h2 class="section-title">Five-Axis Taxonomy</h2>
+            <div class="content">
+                <p>We organize transparency along five complementary dimensions:</p>
+                <figure>
+                    <img src="images/figure1.jpg" alt="Five-axis taxonomy">
+                    <figcaption><strong>Figure 1:</strong> The Five-Axis Taxonomy organizing transparency across WHAT, WHY, HOW, WHEN, and WHO dimensions.</figcaption>
+                </figure>
+            </div>
+
+            <div class="grid-5">
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #667eea, #764ba2);">WHAT</div>
+                    <h3>Cognitive Objects</h3>
+                    <p><em>What should be transparent?</em></p>
+                    <ul>
+                        <li>Intent (Goals)</li>
+                        <li>Beliefs (World Model)</li>
+                        <li>Plans (Action Sequences)</li>
+                        <li>Memory/State</li>
+                        <li>Tool I/O</li>
+                        <li>Policies</li>
+                        <li>Outcomes</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #f093fb, #f5576c);">WHY</div>
+                    <h3>Assurance Objectives</h3>
+                    <p><em>Why is transparency required?</em></p>
+                    <ul>
+                        <li>Faithfulness</li>
+                        <li>Usefulness</li>
+                        <li>Compliance</li>
+                        <li>Robustness</li>
+                        <li>Equity</li>
+                        <li>Auditability</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">HOW</div>
+                    <h3>Mechanisms</h3>
+                    <p><em>How is transparency achieved?</em></p>
+                    <ul>
+                        <li>Intrinsic</li>
+                        <li>Post-hoc</li>
+                        <li>Mechanistic</li>
+                        <li>Operational</li>
+                        <li>Social</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #fa709a, #fee140);">WHEN</div>
+                    <h3>Temporal Stages</h3>
+                    <p><em>When is transparency required?</em></p>
+                    <ul>
+                        <li>Design-time</li>
+                        <li>Process-time</li>
+                        <li>Outcome-time</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" style="background: linear-gradient(135deg, #30cfd0, #330867);">WHO</div>
+                    <h3>Stakeholders</h3>
+                    <p><em>Who requires transparency?</em></p>
+                    <ul>
+                        <li>End Users</li>
+                        <li>Developers</li>
+                        <li>Auditors</li>
+                        <li>Regulators</li>
+                        <li>Third Parties</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MEP -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Minimal Explanation Packet (MEP)</h2>
+            <div class="content">
+                <p>The MEP is a standardized record supporting multiple transparency objectives simultaneously.</p>
+                <figure>
+                    <img src="images/figure6.jpg" alt="MEP operationalization">
+                    <figcaption><strong>Figure 6:</strong> MEP lifecycle from design-time specs to outcome with integrity gates.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Findings -->
+    <section id="findings" class="section">
+        <div class="container">
+            <h2 class="section-title">Key Findings</h2>
+            
+            <div class="finding">
+                <h3>Interpretability Coverage</h3>
+                <figure>
+                    <img src="images/figure9.jpg" alt="Interpretability coverage">
+                    <figcaption><strong>Figure 9:</strong> Significant gaps remain for tool use, memory, and multi-agent interpretability.</figcaption>
+                </figure>
+            </div>
+
+            <div class="finding">
+                <h3>Explainability Coverage</h3>
+                <figure>
+                    <img src="images/figure14.jpg" alt="Explainability coverage">
+                    <figcaption><strong>Figure 14:</strong> Major gaps in uncertainty communication and multi-agent attribution.</figcaption>
+                </figure>
+            </div>
+
+            <div class="finding">
+                <h3>Evaluation Landscape</h3>
+                <figure>
+                    <img src="images/figure13.jpg" alt="Evaluation landscape">
+                    <figcaption><strong>Figure 13:</strong> Nine core evaluation areas for agentic AI systems.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contributions -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="section-title">Contributions</h2>
+            <div class="grid-3">
+                <div class="card-simple">
+                    <div class="number">1</div>
+                    <h3>Comprehensive Synthesis</h3>
+                    <p>Consolidating interpretability, XAI, and agentic systems monitoring across single-agent, multi-agent, and multimodal settings.</p>
+                </div>
+                <div class="card-simple">
+                    <div class="number">2</div>
+                    <h3>Five-Axis Taxonomy</h3>
+                    <p>Systematic organization along WHAT, WHY, HOW, WHEN, and WHO dimensions for comparable analysis.</p>
+                </div>
+                <div class="card-simple">
+                    <div class="number">3</div>
+                    <h3>Gap Analysis</h3>
+                    <p>Mapping methods to governance frameworks and identifying critical research gaps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Example -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Example: Tool-Using Agent</h2>
+            <figure>
+                <img src="images/figure5.jpg" alt="Tool-using agent">
+                <figcaption><strong>Figure 5:</strong> Tool-using agent execution flow with transparency substrate.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Citation -->
+    <section id="citation" class="section bg-dark">
+        <div class="container">
+            <h2 class="section-title">Citation</h2>
+            <div class="bibtex">
+                <pre id="bibtexCode">@article{raza2025transparency,
+  title={Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
+  author={Raza, Shaina and Radwan, Ahmed Y. and Chaduvula, Sindhu and 
+          Alinoori, Mahshid and Emmanouilidis, Christos},
+  journal={ACM Computing Surveys},
+  volume={37},
+  number={4},
+  pages={111},
+  year={2025}
+}</pre>
+                <button id="copyBtn">Copy</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Acknowledgments -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Acknowledgments</h2>
+            <p>Resources provided by Province of Ontario, Government of Canada through CIFAR, Vector Institute sponsors, and the EU Horizon Europe AIXPERT project (Grant 101214389).</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="https://github.com/VectorInstitute/Agentic-Transparency" target="_blank">GitHub</a>
+                <a href="https://arxiv.org/abs/XXXXXXX" target="_blank">arXiv</a>
+                <a href="https://vectorinstitute.ai" target="_blank">Vector Institute</a>
+            </div>
+            <p>Website design inspired by academic project templates. Licensed under CC BY-SA 4.0.</p>
+        </div>
+    </footer>
+
+    <button id="scrollTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
