@@ -1,6 +1,4 @@
-# X-AXIOM: Agentic Transparency
-
-**A Practical Taxonomy for Interpretability and Explainability in LLM-Based Agents**
+# Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance
 
 [![Paper](https://img.shields.io/badge/Paper-ACM-blue)]()
 [![arXiv](https://img.shields.io/badge/arXiv-XXXX.XXXXX-b31b1b.svg)](https://arxiv.org/abs/XXXX.XXXXX)
