@@ -30,6 +30,7 @@
     --container: 1100px;
     --container-wide: 1300px;
     --radius: 8px;
+    --radius-sm: 4px;
 }
 
 /* Reset */
@@ -131,7 +132,7 @@ img {
 }
 
 .nav-logo img {
-    height: 120px;
+    height: 80px;
     transition: opacity 0.3s ease;
 }
 
@@ -288,6 +289,56 @@ figcaption strong {
     color: var(--text);
 }
 
+/* Positioning Section - Side by Side Layout */
+.section .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: var(--space-xl);
+    align-items: center;
+    margin-top: var(--space-md);
+}
+
+.section .two-col > div {
+    padding-right: var(--space-lg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.section .two-col p {
+    font-size: 1.35rem;
+    line-height: 1.9;
+    margin-bottom: var(--space-lg);
+    font-weight: 400;
+}
+
+.section .two-col p:last-child {
+    margin-bottom: 0;
+}
+
+.section .two-col strong {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.section .two-col figure {
+    margin: 0;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+.section .two-col figure img {
+    width: 100%;
+    height: auto;
+}
+
+.section .two-col figcaption {
+    font-size: 1.05rem;
+}
+
 .full-width {
     margin-top: var(--space-xl);
 }
@@ -375,13 +426,17 @@ figcaption strong {
 }
 
 .card li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
+    content: "\2022";
+    position: relative;
     color: var(--accent);
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-right: 8px;
 }
+
+
+
+
 
 .card li:not(:last-child) {
     margin-bottom: 2px;
@@ -511,24 +566,48 @@ footer p {
 
 /* Responsive */
 @media (max-width: 1024px) {
+    .section .two-col {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+    
+    .section .two-col > div {
+        padding-right: 0;
+    }
+    
+    .section .two-col p {
+        font-size: 1.2rem;
+    }
+    
     .grid-5 {
         grid-template-columns: repeat(3, 1fr);
+    }
+    
+    /* Container adjustments for tablets */
+    .container,
+    .container-wide {
+        padding: 0 var(--space-md);
     }
 }
 
 @media (max-width: 768px) {
+    /* Typography adjustments */
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
+        line-height: 1.2;
     }
     
     .hero h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        line-height: 1.5;
     }
     
     .section-title {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: var(--space-md);
     }
     
+    /* Layout adjustments */
     .two-col {
         grid-template-columns: 1fr;
     }
@@ -536,8 +615,46 @@ footer p {
     .grid-3,
     .grid-5 {
         grid-template-columns: 1fr;
+        gap: var(--space-md);
     }
     
+    /* Card adjustments */
+    .card {
+        padding: var(--space-md);
+    }
+    
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    
+    .card p {
+        font-size: 1rem;
+    }
+    
+    .card li {
+        font-size: 1rem;
+        padding: 5px 0;
+    }
+    
+    /* Figure adjustments for mobile */
+    figure {
+        margin: var(--space-md) 0;
+        border-radius: var(--radius-sm);
+    }
+    
+    figure img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+    
+    figcaption {
+        padding: var(--space-sm);
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    /* Navigation */
     .nav-menu {
         display: none;
     }
@@ -552,16 +669,129 @@ footer p {
         background: white;
         padding: var(--space-md);
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        gap: var(--space-xs);
     }
     
     .nav-toggle {
         display: flex;
     }
+    
+    .nav-logo img {
+        height: 50px;
+    }
+    
+    /* Buttons */
+    .btn {
+        font-size: 0.95rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
+    /* Container padding */
+    .container,
+    .container-wide {
+        padding: 0 var(--space-sm);
+    }
+    
+    /* Hero section */
+    .hero {
+        padding: var(--space-xxl) 0 var(--space-xl);
+    }
+    
+    .authors {
+        font-size: 0.95rem;
+    }
+    
+    .affiliation {
+        font-size: 0.85rem;
+    }
 }
 
 @media (max-width: 480px) {
+    /* Base font size */
     body {
-        font-size: 16px;
+        font-size: 15px;
+    }
+    
+    /* Hero adjustments */
+    .hero h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+    
+    .hero h2 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    /* Section spacing */
+    .section {
+        padding: var(--space-xl) 0;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    /* Card header */
+    .card-header {
+        font-size: 1.1rem;
+        padding: var(--space-xs) var(--space-sm);
+    }
+    
+    /* Navigation */
+    .nav-logo img {
+        height: 40px;
+    }
+    
+    /* Figures - extra mobile optimization */
+    figure {
+        margin: var(--space-sm) -var(--space-sm);
+        border-radius: 0;
+        box-shadow: none;
+    }
+    
+    figure img {
+        border-radius: 0;
+    }
+    
+    figcaption {
+        padding: var(--space-sm);
+        font-size: 0.85rem;
+        margin: 0 var(--space-sm);
+    }
+    
+    /* Container - full width on very small screens */
+    .container,
+    .container-wide {
+        padding: 0 var(--space-xs);
+    }
+    
+    /* Positioning text */
+    .section .two-col p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+    
+    /* Grid adjustments */
+    .grid-5,
+    .grid-3 {
+        gap: var(--space-sm);
+    }
+    
+    /* Scroll to top button */
+    #scrollTop {
+        width: 45px;
+        height: 45px;
+        bottom: 15px;
+        right: 15px;
+        font-size: 1.2rem;
+    }
+}
+
+/* Landscape phone adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero {
+        padding: var(--space-lg) 0;
     }
     
     .hero h1 {
@@ -569,7 +799,7 @@ footer p {
     }
     
     .section {
-        padding: var(--space-xl) 0;
+        padding: var(--space-lg) 0;
     }
 }
 
