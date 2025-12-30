@@ -71,6 +71,9 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 #### 1.1 Perception & Vision-Language Models
 
 **Recent Advances (2024-2025)**
+• [2025] **Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs**  *Zhining Liu et al.* [[paper](https://arxiv.org/html/2510.17771v1)]
+
+. [2025] **Perspective-Aware Reasoning in Vision-Language Models via Mental Imagery Simulation** *P.Y. Lee et al.* [[paper](https://arxiv.org/pdf/2504.17207)]
 
 • [2024] **A Concept-Based Explainability Framework for Large Multimodal Models** *Mohammad Shukor et al.* [[paper](https://proceedings.neurips.cc/paper_files/paper/2024/file/f4fba41b554f9aaa013c4062a1c40518-Paper-Conference.pdf)]
 
@@ -88,7 +91,10 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 1.2 Mechanistic Interpretability
 
-**Recent Advances (2023-2024)**
+**Recent Advances (2023-2025)**
+• [2025] **The Mechanistic Emergence of Symbol Grounding in Language Models**  *Shuyu Wu et al.* [[paper](https://arxiv.org/html/2510.13796v1)]
+
+. [2025] **Causal Tracing of Object Representations in Large Vision Language Models: Mechanistic Interpretability and Hallucination Mitigation** *Qiming Li et al.* [[paper](https://arxiv.org/abs/2511.05923)]
 
 • [2024] **Mechanistic Interpretability for AI Safety: A Review** *Leonard Bereska et al.* [[paper](https://arxiv.org/abs/2404.14082)]
 
@@ -106,11 +112,37 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 1.3 Probing & Representation Analysis
 
+**Recent Advances (2023-2025)**
+
+• [2025] **Linear Personality Probing and Steering in LLMs: A Big Five Study**  *Michel Frising, Daniel Balcells* (submitted) [[paper](https://arxiv.org/abs/2512.17639)]
+
+• [2025] **CoT Vectors: Transferring and Probing the Reasoning Mechanisms of LLMs**  *Li Li et al.* (submitted) [[paper](https://arxiv.org/abs/2510.00579)]
+
+• [2024] **Probing Language Models on Their Knowledge Source**  *Tighidet et al.* [[paper](https://arxiv.org/abs/2410.05817)]
+
+• [2024] **Probing Conceptual Understanding of Large Visual-Language Models**  *Schiappa et al.* [[paper](https://arxiv.org/abs/2304.03659)]
+
+• [2023] **The Linear Representation Hypothesis and the Geometry of Large Language Models**  *Kiho Park et al.* [[paper](https://arxiv.org/abs/2311.03658)]
+
+**Early Works (2016-2019)**
+
 • [2019] **A Structural Probe for Finding Syntax in Word Representations** *John Hewitt et al.* [[paper](https://aclanthology.org/N19-1419/)]
 
 • [2016] **Understanding Intermediate Layers using Linear Classifier Probes** *Guillaume Alain et al.* [[paper](https://arxiv.org/abs/1610.01644)]
 
 #### 1.4 Attention Analysis
+
+**Recent Advances (2023-2025)**
+
+• [2025] **Causal Head Gating: A Framework for Interpreting Roles of Attention Heads in Transformers**  *Andrew J. Nam et al.* [[paper](https://arxiv.org/abs/2505.13737)]
+
+• [2025] **Interpreting Attention Heads for Image-to-Text Information Flow in Large Vision-Language Models**  *Jinyeong Kim et al.* [[paper](https://arxiv.org/abs/2509.17588)]
+
+• [2024] **Faithful Attention Explainer: Verbalizing Decisions Based on Discriminative Features**  *Yao Rong et al.* [[paper](https://arxiv.org/abs/2405.13032)]
+
+• [2023] **Causal Interpretation of Self-Attention in Pre-Trained Transformers**  *Raanan Y. Rohekar et al.* [[paper](https://arxiv.org/abs/2310.20307)]
+
+**Early Works (2019-2021)**
 
 • [2021] **Transformer Interpretability Beyond Attention Visualization** *Hila Chefer et al.* [[paper](https://arxiv.org/abs/2012.09838)]
 
