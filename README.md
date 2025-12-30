@@ -71,6 +71,7 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 #### 1.1 Perception & Vision-Language Models
 
 **Recent Advances (2024-2025)**
+
 • [2025] **Seeing but Not Believing: Probing the Disconnect Between Visual Attention and Answer Correctness in VLMs**  *Zhining Liu et al.* [[paper](https://arxiv.org/html/2510.17771v1)]
 
 . [2025] **Perspective-Aware Reasoning in Vision-Language Models via Mental Imagery Simulation** *P.Y. Lee et al.* [[paper](https://arxiv.org/pdf/2504.17207)]
@@ -92,6 +93,7 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 #### 1.2 Mechanistic Interpretability
 
 **Recent Advances (2023-2025)**
+
 • [2025] **The Mechanistic Emergence of Symbol Grounding in Language Models**  *Shuyu Wu et al.* [[paper](https://arxiv.org/html/2510.13796v1)]
 
 . [2025] **Causal Tracing of Object Representations in Large Vision Language Models: Mechanistic Interpretability and Hallucination Mitigation** *Qiming Li et al.* [[paper](https://arxiv.org/abs/2511.05923)]
