@@ -7,7 +7,7 @@
 
 ## 🌟 Overview
 
-[Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance](https://arxiv.org/abs/XXXX.XXXXX)
+Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance
 
 Welcome to our Transparency in Agentic AI survey paper repository. This comprehensive collection documents interpretability and explainability methods for LLM-based agentic systems, covering the full agent lifecycle from design through deployment.
 
