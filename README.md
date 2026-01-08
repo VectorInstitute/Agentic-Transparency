@@ -11,7 +11,7 @@
 
 Welcome to our Transparency in Agentic AI survey paper repository. This comprehensive collection documents interpretability and explainability methods for LLM-based agentic systems, covering the full agent lifecycle from design through deployment.
 
-**Authors:** Shaina Raza¹, Ahmed Y. Radwan¹, Sindhu Chaduvula¹, Mahshid Alinoori¹, Christos Emmanouilidis²
+**Authors:** Shaina Raza¹, Ahmed Y. Radwan¹, Sindhuja Chaduvula¹, Mahshid Alinoori¹, Christos Emmanouilidis²
 
 ¹Vector Institute for Artificial Intelligence · ²University of Groningen
 
@@ -451,7 +451,7 @@ If you find this survey useful in your research, please cite:
 
 **Shaina Raza** · shaina.raza@vectorinstitute.ai  
 **Ahmed Y. Radwan** · ahmed.radwan@vectorinstitute.ai  
-**Sindhu Chaduvula** · sindhuja.chaduvula@vectorinstitute.ai  
+**Sindhuja Chaduvula** · sindhuja.chaduvula@vectorinstitute.ai  
 **Mahshid Alinoori** · mahshid.alinoori@vectorinstitute.ai  
 **Christos Emmanouilidis** · c.emmanouilidis@rug.nl
 
