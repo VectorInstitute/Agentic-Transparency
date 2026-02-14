@@ -442,7 +442,15 @@ We welcome contributions! This is a living repository that will be updated as th
 If you find this survey useful in your research, please cite:
 
 ```bibtex
-
+@article{raza2026transparency_agentic_ai_engrxiv,
+  title        = {Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
+  author       = {Raza, Shaina and Radwan, Ahmed Y. and Chaduvula, Sindhuja and Alinoori, Mahshid and Emmanouilidis, Christos},
+  journal      = {EngrXiv Preprint},
+  year         = {2026},
+  number       = {6451},
+  url          = {https://engrxiv.org/preprint/view/6451},
+  note         = {Accessed: 2026-02-14}
+}
 ```
 
 ---
