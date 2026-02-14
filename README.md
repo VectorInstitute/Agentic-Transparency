@@ -1,4 +1,8 @@
 # Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance
+[![EngrXiv](https://img.shields.io/badge/EngrXiv-Preprint-blue)](https://engrxiv.org/preprint/view/6451)
+[![Project Page](https://img.shields.io/badge/Project-Website-brightgreen)](https://vectorinstitute.github.io/Agentic-Transparency/)
+
+---
 
 <div align="center">
   <img src="docs/images/figure2.jpg" alt="Transparency Gap" width="90%"/>
