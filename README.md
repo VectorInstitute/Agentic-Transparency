@@ -262,6 +262,8 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 3.1 Multi-Turn & Long-Horizon Tasks
 
+• [2026] **ClawBench: Can AI Agents Complete Everyday Online Tasks?** *Yuxuan Zhang et al.* [[paper](https://arxiv.org/abs/2604.08523)]
+
 • [2024] **TheAgentCompany: Benchmarking LLM Agents on Consequential Real-World Tasks** *Frank F Xu et al.* [[paper](https://arxiv.org/abs/2412.14161)]
 
 • [2024] **AssistantBench: Can Web Agents Solve Realistic and Time-Consuming Tasks?** *Ori Yoran et al.* [[paper](https://arxiv.org/abs/2407.15711)]
