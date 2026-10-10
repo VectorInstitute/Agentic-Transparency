@@ -5,8 +5,13 @@
 ---
 
 <div align="center">
-  <img src="docs/images/figure2.jpg" alt="Transparency Gap" width="90%"/>
-  <p><em>The transparency gap in agentic AI showing market growth asymmetry, research output gaps, enterprise adoption challenges, and sectoral requirements.</em></p>
+  <img src="docs/images/gap-market.png" alt="Agentic AI and XAI market projections" width="48%"/>
+  <img src="docs/images/gap-growth.png" alt="Growth rate asymmetry for markets and arXiv publications" width="48%"/>
+  <img src="docs/images/gap-adoption.png" alt="Enterprise adoption gap" width="48%"/>
+  <img src="docs/images/gap-sector.png" alt="Sector adoption versus transparency requirements" width="48%"/>
+  <img src="docs/images/gap-refs-type.png" alt="Cited references by source type" width="48%"/>
+  <img src="docs/images/gap-refs-theme.png" alt="Cited references by theme" width="48%"/>
+  <p><em>The transparency gap in agentic AI: market size, research and market growth, enterprise adoption, sector requirements, and the references cited in this survey by source type and theme. 2026* covers January–October.</em></p>
 </div>
 
 ## 🌟 Overview
@@ -35,10 +40,10 @@ Transparency in Agentic AI encompasses the principles, practices, and frameworks
 </div>
 
 **Key Trends:**
-- **Market Asymmetry**: Global Agentic AI market projected to reach USD 150-200 billion by 2033-2034, growing 6× faster than XAI tools
-- **Research Gap**: XAI/interpretability surveys focus on static models while agentic AI surveys treat transparency as secondary
-- **Enterprise Challenge**: 90% plan agentic AI deployment within three years, yet only 2% have deployed at scale
-- **Regulatory Pressure**: Sectors driving adoption (banking, healthcare, government) face strictest transparency requirements (EU AI Act, NIST AI RMF, ISO/IEC 42001)
+- **Market Asymmetry**: Agentic AI market growth is projected to outpace XAI tooling by about 6× by 2034 (44% versus 20% compound annual growth)
+- **Research Gap**: arXiv publication growth for agentic AI also outpaces XAI over 2022–2025. In this survey’s references, work that combines agentic systems with transparency, safety, or governance appears only from 2024
+- **Enterprise Challenge**: 90% of enterprises report interest on a three-year horizon and 23% are piloting, yet only 2% had deployed at scale by early 2025, and 15% report having XAI infrastructure
+- **Regulatory Pressure**: Sectors with high transparency requirements (BFSI, healthcare, government) are actively deploying agentic systems (EU AI Act, NIST AI RMF, ISO/IEC 42001)
 
 This repository provides comprehensive coverage across:
 - **Interpretability Methods** - Design-time and process-time transparency for perception, reasoning, tool use, memory, and multi-agent systems
@@ -368,6 +373,24 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 • [2024] **A Survey on Large Language Model Based Autonomous Agents** *Lei Wang et al.* [[paper](https://arxiv.org/abs/2308.11432)]
 
+**Added in the 2026 revision**
+
+• [2026] **A Systematic Literature Review of Agentic AI: Definitions, Architectures, and Challenges** *Cassiano Moralles et al.* [[paper](https://doi.org/10.1109/ACCESS.2026.3668138)]
+
+• [2026] **Agentic AI Systems: A Systematic Survey of Multi-Agent Architectures, Cognitive Foundations, Interaction, Explainability, Security, and Performance Evaluation** *Smita Khapre et al.* [[paper](https://doi.org/10.1016/j.neucom.2026.134049)]
+
+• [2026] **Evaluating and Regulating Agentic AI: A Study of Benchmarks, Metrics, and Regulation** *Azib Farooq et al.* [[paper](https://doi.org/10.1016/j.inffus.2026.104444)]
+
+• [2025] **Survey on Evaluation of LLM-based Agents** *Asaf Yehudai et al.* [[paper](https://arxiv.org/abs/2503.16416)]
+
+• [2025] **Multi-Agent Risks from Advanced AI** *Lewis Hammond et al.* [[paper](https://arxiv.org/abs/2502.14143)]
+
+• [2025] **Human-Artificial Interaction in the Age of Agentic AI** *Uwe M. Borghoff et al.* [[paper](https://doi.org/10.3389/fhumd.2025.1579166)]
+
+• [2024] **TrustAgent: Towards Safe and Trustworthy LLM-based Agents** *Wenyue Hua et al.* [[paper](https://arxiv.org/abs/2402.01586)]
+
+• [2026] **Effects of Explanations in Human-AI Interaction** *Philipp Reinhard et al.* [[paper](https://doi.org/10.1007/s10796-026-10716-4)]
+
 ---
 
 ## 🔬 Research Gaps & Future Directions
@@ -446,14 +469,10 @@ We welcome contributions! This is a living repository that will be updated as th
 If you find this survey useful in your research, please cite:
 
 ```bibtex
-@article{raza2026transparency_agentic_ai_engrxiv,
-  title        = {Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
-  author       = {Raza, Shaina and Radwan, Ahmed Y. and Chaduvula, Sindhuja and Alinoori, Mahshid and Emmanouilidis, Christos},
-  journal      = {EngrXiv Preprint},
-  year         = {2026},
-  number       = {6451},
-  url          = {https://engrxiv.org/preprint/view/6451},
-  note         = {Accessed: 2026-02-14}
+@article{raza2026transparency,
+  title={Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
+  author={Raza, Shaina and Radwan, Ahmed Y and Chaduvula, Sindhuja and Alinoori, Mahshid and Emmanouilidis, Christos},
+  year={2026}
 }
 ```
 
@@ -480,4 +499,4 @@ MIT License - see [LICENSE](LICENSE) for details
 
 ---
 
-**Last Updated**: December 2025
+**Last Updated**: October 2026
