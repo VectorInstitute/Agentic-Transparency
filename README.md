@@ -1,18 +1,8 @@
 # Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance
-[![EngrXiv](https://img.shields.io/badge/EngrXiv-Preprint-blue)](https://engrxiv.org/preprint/view/6451)
+[![SSRN](https://img.shields.io/badge/SSRN-Preprint-blue)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7030899)
 [![Project Page](https://img.shields.io/badge/Project-Website-brightgreen)](https://vectorinstitute.github.io/Agentic-Transparency/)
 
 ---
-
-<div align="center">
-  <img src="docs/images/gap-market.png" alt="Agentic AI and XAI market projections" width="48%"/>
-  <img src="docs/images/gap-growth.png" alt="Growth rate asymmetry for markets and arXiv publications" width="48%"/>
-  <img src="docs/images/gap-adoption.png" alt="Enterprise adoption gap" width="48%"/>
-  <img src="docs/images/gap-sector.png" alt="Sector adoption versus transparency requirements" width="48%"/>
-  <img src="docs/images/gap-refs-type.png" alt="Cited references by source type" width="48%"/>
-  <img src="docs/images/gap-refs-theme.png" alt="Cited references by theme" width="48%"/>
-  <p><em>The transparency gap in agentic AI: market size, research and market growth, enterprise adoption, sector requirements, and the references cited in this survey by source type and theme. 2026* covers January–October.</em></p>
-</div>
 
 ## 🌟 Overview
 
@@ -32,36 +22,6 @@ Transparency in Agentic AI encompasses the principles, practices, and frameworks
 
 ---
 
-## 📊 The Transparency Gap (2022-2025)
-
-<div align="center">
-  <img src="docs/images/figure4.jpg" alt="Evolution Timeline" width="90%"/>
-  <p><em>Evolution of methods showing the "transparency gap" period (2022–present) where Agentic AI development has accelerated while explainability methods remain focused on static models.</em></p>
-</div>
-
-**Key Trends:**
-- **Market Asymmetry**: Agentic AI market growth is projected to outpace XAI tooling by about 6× by 2034 (44% versus 20% compound annual growth)
-- **Research Gap**: arXiv publication growth for agentic AI also outpaces XAI over 2022–2025. In this survey’s references, work that combines agentic systems with transparency, safety, or governance appears only from 2024
-- **Enterprise Challenge**: 90% of enterprises report interest on a three-year horizon and 23% are piloting, yet only 2% had deployed at scale by early 2025, and 15% report having XAI infrastructure
-- **Regulatory Pressure**: Sectors with high transparency requirements (BFSI, healthcare, government) are actively deploying agentic systems (EU AI Act, NIST AI RMF, ISO/IEC 42001)
-
-This repository provides comprehensive coverage across:
-- **Interpretability Methods** - Design-time and process-time transparency for perception, reasoning, tool use, memory, and multi-agent systems
-- **Explainability Methods** - Process-time and outcome-time explanations including chain-of-thought, faithfulness, and counterfactuals
-- **Evaluation & Benchmarks** - Assessment frameworks for multi-turn tasks, tool use, planning, memory, multi-agent systems, and safety
-- **Governance & Compliance** - Regulatory frameworks (EU AI Act, NIST, ISO/IEC 42001) and governance technologies
-
----
-
-## 🎯 Survey Positioning
-
-<div align="center">
-  <img src="docs/images/figure3.jpg" alt="Literature Positioning" width="75%"/>
-  <p><em>This survey occupies the intersection of XAI/interpretability and agentic AI research, addressing transparency challenges specific to agentic systems.</em></p>
-</div>
-
----
-
 ## 🏗️ Five-Axis Taxonomy
 
 <div align="center">
@@ -70,6 +30,37 @@ This repository provides comprehensive coverage across:
 </div>
 
 Our framework organizes transparency along five complementary dimensions: **Cognitive Objects (WHAT)**, **Assurance Objectives (WHY)**, **Mechanisms (HOW)**, **Temporal Stages (WHEN)**, and **Stakeholders (WHO)**.
+
+---
+
+## 📊 The Transparency Gap
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="docs/images/gap-market.png" alt="Projected agentic AI and XAI market size from 2024 to 2034"/><br/>(a) Market</td>
+    <td align="center" width="33%"><img src="docs/images/gap-growth.png" alt="Compound annual growth for agentic AI and XAI markets and for arXiv publications"/><br/>(b) Growth</td>
+    <td align="center" width="33%"><img src="docs/images/gap-adoption.png" alt="Enterprise interest and at-scale deployment of agentic AI compared with XAI infrastructure"/><br/>(c) Adoption</td>
+  </tr>
+  <tr>
+    <td align="center" width="33%"><img src="docs/images/gap-sector.png" alt="Sector adoption of agentic AI compared with transparency requirements"/><br/>(d) Sector</td>
+    <td align="center" width="33%"><img src="docs/images/gap-refs-type.png" alt="References cited in this survey by year and source type"/><br/>(e) Refs by type</td>
+    <td align="center" width="33%"><img src="docs/images/gap-refs-theme.png" alt="References cited in this survey by theme"/><br/>(f) Refs by theme</td>
+  </tr>
+</table>
+
+<p align="center"><em>The transparency gap in agentic AI: (a) projected market size; (b) compound annual growth of those markets and of arXiv publications, 2022–2025; (c) enterprise interest and at-scale deployment versus XAI infrastructure; (d) sector adoption versus transparency requirements; (e–f) references cited in this survey by source type and by theme. 2026* covers January–October.</em></p>
+
+**Key Trends:**
+- **Market Asymmetry**: Agentic AI market growth is projected to outpace XAI tooling by about 6× by 2034 (44% versus 20% compound annual growth)
+- **Research Gap**: arXiv publication growth for agentic AI also outpaces XAI over 2022–2025. In this survey’s references, work that combines agentic systems with transparency, safety, or governance appears only from 2024
+- **Enterprise Challenge**: 90% of enterprises report near-term interest, yet only 2% had deployed at scale by early 2025, and 15% report having XAI infrastructure
+- **Regulatory Pressure**: Sectors with high transparency requirements (BFSI, healthcare, government) are actively deploying agentic systems (EU AI Act, NIST AI RMF, ISO/IEC 42001)
+
+This repository provides comprehensive coverage across:
+- **Interpretability Methods** - Design-time and process-time transparency for perception, reasoning, tool use, memory, and multi-agent systems
+- **Explainability Methods** - Process-time and outcome-time explanations including chain-of-thought, faithfulness, and counterfactuals
+- **Evaluation & Benchmarks** - Assessment frameworks for multi-turn tasks, tool use, planning, memory, multi-agent systems, and safety
+- **Governance & Compliance** - Regulatory frameworks (EU AI Act, NIST, ISO/IEC 42001) and governance technologies
 
 ---
 
@@ -257,13 +248,17 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 2.4 Interactive & User-Centered XAI
 
-• [2024] **Usable XAI: 10 Strategies Towards Exploiting Explainability in the LLM Era** *Xuansheng Wu et al.* [[paper](https://arxiv.org/abs/2403.08946)]
+• [2026] **Usable XAI: 10 Strategies Towards Exploiting Explainability in the LLM Era** *Xuansheng Wu et al.* [[paper](https://arxiv.org/abs/2403.08946)]
 
 • [2024] **x-plAIn: Explainable AI Through Human-Centered Prompting and Interactive Explanations** *Philip Mavrepis et al.* [[paper](https://arxiv.org/abs/2401.13110)]
 
 ---
 
 ### 3. Evaluation & Benchmarks
+
+• [2026] **A Unified Evaluation Framework for Trustworthy Large Language Models, Agentic AI, and Multimodal Systems** *Shaina Raza et al.* [[paper](https://arxiv.org/abs/2609.19524)]
+
+• [2026] **Harness-Aware Evaluation of LLM Agents: Systems, Benchmarks, and Protocols** *Ahmed Y. Radwan et al.* [[paper](https://doi.org/10.20944/preprints202609.2140.v1)]
 
 #### 3.1 Multi-Turn & Long-Horizon Tasks
 
@@ -341,7 +336,11 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 5.1 XAI & Interpretability Surveys
 
-**Latest Comprehensive Surveys (2024-2025)**
+**Latest Comprehensive Surveys (2024-2026)**
+
+• [2026] **Usable XAI: 10 Strategies Towards Exploiting Explainability in the LLM Era** *Xuansheng Wu et al.* [[paper](https://arxiv.org/abs/2403.08946)]
+
+• [2025] **Towards Transparent AI: A Survey on Explainable Large Language Models** *Avash Palikhe et al.* [[paper](https://arxiv.org/abs/2506.21812)]
 
 • [2025] **Large Language Models for Explainable Recommendation: A Comprehensive Survey** *Ahsan Bilal et al.* [[paper](https://arxiv.org/abs/2504.00125)]
 
@@ -363,17 +362,7 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 #### 5.2 Agentic AI Surveys
 
-**Recent Surveys (2024-2025)**
-
-• [2025] **Agentic Large Language Models: A Survey on the Architectural Designs and Applications** *Aske Plaat et al.* [[paper](https://arxiv.org/abs/2503.23037)]
-
-• [2025] **Large Language Model Agents: Methodology, Applications and Challenges** *Junyu Luo et al.* [[paper](https://arxiv.org/abs/2503.21460)]
-
-• [2025] **A Systematic Literature Review on Large Language Model-Based Agents for Tool Learning** *Weikai Xu et al.* [[paper](https://link.springer.com/article/10.1007/s41019-024-00259-2)]
-
-• [2024] **A Survey on Large Language Model Based Autonomous Agents** *Lei Wang et al.* [[paper](https://arxiv.org/abs/2308.11432)]
-
-**Added in the 2026 revision**
+**Recent Surveys (2024-2026)**
 
 • [2026] **A Systematic Literature Review of Agentic AI: Definitions, Architectures, and Challenges** *Cassiano Moralles et al.* [[paper](https://doi.org/10.1109/ACCESS.2026.3668138)]
 
@@ -381,24 +370,31 @@ Our framework organizes transparency along five complementary dimensions: **Cogn
 
 • [2026] **Evaluating and Regulating Agentic AI: A Study of Benchmarks, Metrics, and Regulation** *Azib Farooq et al.* [[paper](https://doi.org/10.1016/j.inffus.2026.104444)]
 
+• [2026] **Effects of Explanations in Human-AI Interaction** *Philipp Reinhard et al.* [[paper](https://doi.org/10.1007/s10796-026-10716-4)]
+
+• [2025] **Agentic Large Language Models: A Survey on the Architectural Designs and Applications** *Aske Plaat et al.* [[paper](https://arxiv.org/abs/2503.23037)]
+
+• [2025] **Large Language Model Agents: Methodology, Applications and Challenges** *Junyu Luo et al.* [[paper](https://arxiv.org/abs/2503.21460)]
+
+• [2025] **A Systematic Literature Review on Large Language Model-Based Agents for Tool Learning** *Weikai Xu et al.* [[paper](https://link.springer.com/article/10.1007/s41019-024-00259-2)]
+
 • [2025] **Survey on Evaluation of LLM-based Agents** *Asaf Yehudai et al.* [[paper](https://arxiv.org/abs/2503.16416)]
+
+• [2025] **A Survey on Trustworthy LLM Agents: Threats and Countermeasures** *Miao Yu et al.* [[paper](https://arxiv.org/abs/2503.09648)]
+
+• [2025] **AgentAI: A Comprehensive Survey on Autonomous Agents in Distributed AI for Industry 4.0** *Francesco Piccialli et al.* [[paper](https://doi.org/10.1016/j.eswa.2025.128404)]
 
 • [2025] **Multi-Agent Risks from Advanced AI** *Lewis Hammond et al.* [[paper](https://arxiv.org/abs/2502.14143)]
 
 • [2025] **Human-Artificial Interaction in the Age of Agentic AI** *Uwe M. Borghoff et al.* [[paper](https://doi.org/10.3389/fhumd.2025.1579166)]
 
-• [2024] **TrustAgent: Towards Safe and Trustworthy LLM-based Agents** *Wenyue Hua et al.* [[paper](https://arxiv.org/abs/2402.01586)]
+• [2024] **A Survey on Large Language Model Based Autonomous Agents** *Lei Wang et al.* [[paper](https://arxiv.org/abs/2308.11432)]
 
-• [2026] **Effects of Explanations in Human-AI Interaction** *Philipp Reinhard et al.* [[paper](https://doi.org/10.1007/s10796-026-10716-4)]
+• [2024] **TrustAgent: Towards Safe and Trustworthy LLM-based Agents** *Wenyue Hua et al.* [[paper](https://arxiv.org/abs/2402.01586)]
 
 ---
 
 ## 🔬 Research Gaps & Future Directions
-
-<div align="center">
-  <img src="docs/images/figure9.jpg" alt="Interpretability Coverage" width="85%"/>
-  <p><em>Interpretability method coverage showing gaps in tool use, memory, and multi-agent settings.</em></p>
-</div>
 
 Our systematic analysis reveals critical gaps where current transparency methods fall short of agentic requirements:
 
@@ -414,36 +410,13 @@ Our systematic analysis reveals critical gaps where current transparency methods
 
 • **Temporal Explanations** – Explaining how plans changed mid-execution requires new structures
 
-<div align="center">
-  <img src="docs/images/figure14.jpg" alt="Explainability Coverage" width="85%"/>
-  <p><em>Explainability coverage by context showing major gaps in uncertainty communication and multi-agent attribution.</em></p>
-</div>
-
 ---
 
-## 🔑 Key Artifacts
-
-### Minimal Explanation Packet (MEP)
+## 🔑 Evaluation Landscape
 
 <div align="center">
-  <img src="docs/images/figure6.jpg" alt="MEP Framework" width="80%"/>
-  <p><em>MEP operationalized showing lifecycle flow from design-time specs to outcome with integrity gates.</em></p>
-</div>
-
-A standardized, cryptographically-signed record containing plan summary, tool traces, evidence references, policy activation logs, and cryptographic signatures.
-
-### Tool-Using Agent Example
-
-<div align="center">
-  <img src="docs/images/figure5.jpg" alt="Tool-Using Agent" width="85%"/>
-  <p><em>Tool-using agent execution flow with transparency substrate showing provenance for replay and verification.</em></p>
-</div>
-
-### Evaluation Landscape
-
-<div align="center">
-  <img src="docs/images/figure13.jpg" alt="Evaluation Landscape" width="85%"/>
-  <p><em>Agent performance evaluation landscape showing nine core evaluation areas.</em></p>
+  <img src="docs/images/eval-sunburst.png" alt="Agent performance evaluation landscape with nine core evaluation areas"/>
+  <p><em>Agent performance evaluation landscape. Inner ring: nine core evaluation areas derived from the agentic AI literature. Outer ring: representative metrics for each area.</em></p>
 </div>
 
 ---
@@ -472,7 +445,8 @@ If you find this survey useful in your research, please cite:
 @article{raza2026transparency,
   title={Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
   author={Raza, Shaina and Radwan, Ahmed Y and Chaduvula, Sindhuja and Alinoori, Mahshid and Emmanouilidis, Christos},
-  year={2026}
+  year={2026},
+  url={https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7030899}
 }
 ```
 
@@ -481,10 +455,6 @@ If you find this survey useful in your research, please cite:
 ## 📧 Contact
 
 **Shaina Raza** · shaina.raza@vectorinstitute.ai  
-**Ahmed Y. Radwan** · ahmed.radwan@vectorinstitute.ai  
-**Sindhuja Chaduvula** · sindhuja.chaduvula@vectorinstitute.ai  
-**Mahshid Alinoori** · mahshid.alinoori@vectorinstitute.ai  
-**Christos Emmanouilidis** · c.emmanouilidis@rug.nl
 
 ---
 

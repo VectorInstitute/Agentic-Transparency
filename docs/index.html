@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Transparency in Agentic AI</title>
-    <meta name="description" content="A survey of interpretability, explainability, and governance for LLM-based agentic AI systems.">
+    <meta name="description" content="A survey of trajectory-level interpretability, explainability, and governance for LLM-based agentic AI systems.">
     <meta name="theme-color" content="#ffffff">
     <link rel="canonical" href="https://vectorinstitute.github.io/Agentic-Transparency/">
     <meta property="og:title" content="Transparency in Agentic AI">
-    <meta property="og:description" content="A survey of interpretability, explainability, and governance for LLM-based agentic AI systems.">
+    <meta property="og:description" content="A survey of trajectory-level interpretability, explainability, and governance for LLM-based agentic AI systems.">
     <meta property="og:type" content="article">
     <meta property="og:url" content="https://vectorinstitute.github.io/Agentic-Transparency/">
     <script>document.documentElement.classList.add("js");</script>
@@ -61,7 +61,7 @@
             </ul>
           </div>
           <div class="hero-body" data-reveal>
-            <p class="lede">Agentic systems plan, remember, and use tools. Transparency has to follow that lifecycle, not a single prediction.</p>
+            <p class="lede">Agentic systems plan, use tools, and keep memory over multiple steps. Transparency has to follow the trajectory, not a single output.</p>
             <div class="authors" aria-label="Authors">
               <a href="https://scholar.google.com/citations?user=chcz7RMAAAAJ&amp;hl=en">Shaina Raza<sup>1</sup></a>
               <span>Ahmed Y. Radwan<sup>1</sup></span>
@@ -74,8 +74,8 @@
               <span><sup>2</sup> University of Groningen</span>
             </p>
             <div class="hero-actions">
-              <a class="button button-primary" href="https://engrxiv.org/preprint/view/6451">Paper</a>
-              <a class="button button-secondary" href="https://github.com/VectorInstitute/Agentic-Transparency">Code</a>
+              <a class="button button-primary" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7030899">Paper</a>
+              <a class="button button-secondary" href="https://github.com/VectorInstitute/Agentic-Transparency">GitHub</a>
               <a class="button button-secondary" href="#citation">BibTeX</a>
             </div>
           </div>
@@ -87,8 +87,9 @@
           <p class="section-kicker" data-reveal>Abstract</p>
           <h2 data-reveal>Single-step explanations do not cover an agent.</h2>
           <div class="abstract" data-reveal>
-            <p>Agentic AI systems—LLM-based agents with planning, memory, and tool use—introduce transparency challenges that are poorly served by explainability methods designed for single-step predictions. This article surveys and synthesizes interpretability and explainability techniques relevant to agentic behavior across the agent lifecycle.</p>
-            <p>We organize this survey using a five-axis taxonomy that categorizes prior work by (i) cognitive objects being inspected, (ii) assurance objectives being targeted, (iii) mechanisms employed, (iv) lifecycle stages, and (v) stakeholders served.</p>
+            <p>Agentic AI systems built on large language models plan, use tools, and maintain memory over multiple steps. Their risks and responsibilities depend on an execution trajectory rather than a single output. Despite progress, work on transparency for such systems remains scattered. Most explainability and interpretability research still targets static or single-step model outputs, while Agentic AI surveys emphasize planning, tools, and memory, giving limited attention to transparency and oversight.</p>
+            <p>Literature insufficiently addresses what should be subject to transparency and recorded during an agent’s lifecycle, and how to verify those records. This survey connects interpretability, explainability, and governance from design to deployment, synthesizing methods for plans, tool interactions, memory events, and coordination signals against assurance needs such as faithfulness, auditability, compliance, robustness, and equity.</p>
+            <p>It consolidates evaluation practices and highlights gaps in trajectory-level accountability, tool-mediated provenance, and multi-agent coordination. The Minimal Explanation Packet (MEP) is proposed as a standardized outcome-time artifact that bundles key lifecycle evidence into an audit-ready record.</p>
           </div>
         </div>
       </section>
@@ -100,7 +101,7 @@
               <p class="section-kicker">The transparency gap</p>
               <h2>Deployment is moving faster than the tooling that explains it.</h2>
             </div>
-            <p>Market projections show agentic deployment outpacing XAI tooling by about 6× by 2034. arXiv publication growth for agentic AI also outpaces XAI from 2022 to 2025. More than 90% of enterprises report interest on a three-year horizon, 23% are piloting, only 2% had deployed at scale by early 2025, and 15% report having XAI infrastructure. Work that combines agentic systems with transparency, safety, or governance appears in this survey’s references only from 2024. Banking, healthcare, and government face the strongest transparency requirements.</p>
+            <p>Market projections show agentic deployment outpacing XAI tooling by about 6× by 2034. arXiv publication growth for agentic AI also outpaces XAI from 2022 to 2025. More than 90% of enterprises report near-term interest, only 2% had deployed at scale by early 2025, and 15% report having XAI infrastructure. Work that combines agentic systems with transparency, safety, or governance appears in this survey’s references only from 2024. Banking, healthcare, and government face the strongest transparency requirements.</p>
           </div>
           <div class="stat-callout" data-reveal>
             <strong>6×</strong>
@@ -132,7 +133,7 @@
               <figcaption>(f) Cited references by theme. 2026* is January–October.</figcaption>
             </figure>
           </div>
-          <p class="figure-note">Figure 2. The transparency gap across market size, research growth, enterprise adoption, sector requirements, and the references cited in this survey.</p>
+          <p class="figure-note"><strong>Figure 1.</strong> The transparency gap across market size, research growth, enterprise adoption, sector requirements, and the references cited in this survey.</p>
         </div>
       </section>
 
@@ -149,13 +150,9 @@
             </div>
             <figure class="paper-figure" data-reveal>
               <img src="images/figure3.jpg" alt="This survey at the intersection of XAI and agentic AI research.">
-              <figcaption><strong>Figure 3.</strong> This survey occupies the intersection of XAI and Agentic AI research.</figcaption>
+              <figcaption><strong>Figure 2.</strong> This survey occupies the intersection of XAI and Agentic AI research.</figcaption>
             </figure>
           </div>
-          <figure class="paper-figure framed-figure" data-reveal>
-            <img src="images/figure4.jpg" alt="Evolution timeline showing the transparency gap from 2022 to the present.">
-            <figcaption><strong>Figure 4.</strong> Evolution showing the transparency gap period (2022–present).</figcaption>
-          </figure>
         </div>
       </section>
 
@@ -236,7 +233,7 @@
 
           <figure class="paper-figure framed-figure" data-reveal>
             <img src="images/figure1.jpg" alt="Five-axis taxonomy organizing transparency across what, why, how, when, and who.">
-            <figcaption><strong>Figure 1.</strong> The Five-Axis Taxonomy organizing transparency across WHAT, WHY, HOW, WHEN, and WHO dimensions.</figcaption>
+            <figcaption><strong>Figure 3.</strong> The Five-Axis Taxonomy organizing transparency across WHAT, WHY, HOW, WHEN, and WHO dimensions.</figcaption>
           </figure>
         </div>
       </section>
@@ -249,8 +246,8 @@
           </div>
           <p class="section-lead" data-reveal>The MEP is a standardized record supporting multiple transparency objectives simultaneously.</p>
           <figure class="paper-figure framed-figure" data-reveal>
-            <img src="images/figure6.jpg" alt="MEP lifecycle from design-time specifications to outcome, with integrity gates.">
-            <figcaption><strong>Figure 6.</strong> MEP lifecycle from design-time specs to outcome with integrity gates.</figcaption>
+            <img src="images/mep.png" alt="Minimal Explanation Packet in operation: lifecycle from design-time specifications to release, release-gate logic, and an example packet.">
+            <figcaption><strong>Figure 4.</strong> The Minimal Explanation Packet (MEP) in operation. (A) Lifecycle from design-time specifications to a release outcome. (B) Release gate: a decision is released only if its MEP is complete, signed, hash-consistent with the traces, and within the agreement and parity thresholds; any failure triggers flagging, human review, and rollback. (C) Example MEP.</figcaption>
           </figure>
         </div>
       </section>
@@ -263,24 +260,17 @@
           </div>
           <div class="finding-list">
             <article data-reveal>
-              <h3>Interpretability coverage</h3>
+              <h3>Interpretability timeline</h3>
               <figure class="paper-figure">
-                <img src="images/figure9.jpg" alt="Interpretability coverage across agent capabilities.">
-                <figcaption><strong>Figure 9.</strong> Significant gaps remain for tool use, memory, and multi-agent interpretability.</figcaption>
+                <img src="images/timeline-interp.png" alt="Timeline of key milestones in AI interpretability, from classical neural networks to agentic systems.">
+                <figcaption><strong>Figure 5.</strong> Timeline of key milestones in AI interpretability, from classical neural networks to agentic systems.</figcaption>
               </figure>
             </article>
-            <article data-reveal>
-              <h3>Explainability coverage</h3>
-              <figure class="paper-figure">
-                <img src="images/figure14.jpg" alt="Explainability coverage across communication and attribution.">
-                <figcaption><strong>Figure 14.</strong> Major gaps in uncertainty communication and multi-agent attribution.</figcaption>
-              </figure>
-            </article>
-            <article data-reveal>
+            <article class="finding-sunburst" data-reveal>
               <h3>Evaluation landscape</h3>
               <figure class="paper-figure">
-                <img src="images/figure13.jpg" alt="Nine core evaluation areas for agentic AI systems.">
-                <figcaption><strong>Figure 13.</strong> Nine core evaluation areas for agentic AI systems.</figcaption>
+                <img src="images/eval-sunburst.png" alt="Sunburst of nine core evaluation areas for agentic AI and representative metrics in each area.">
+                <figcaption><strong>Figure 6.</strong> Agent performance evaluation landscape. Inner ring: nine core evaluation areas derived from the agentic AI literature. Outer ring: representative metrics for each area.</figcaption>
               </figure>
             </article>
           </div>
@@ -309,7 +299,7 @@
               <span>03</span>
               <div>
                 <h2>Gap analysis</h2>
-                <p>Mapping methods to governance frameworks and identifying critical research gaps.</p>
+                <p>Mapping methods to governance frameworks and identifying critical gaps in trajectory-level accountability, tool-mediated provenance, and multi-agent coordination.</p>
               </div>
             </article>
           </div>
@@ -323,8 +313,8 @@
             <h2>A tool-using agent, with the substrate made visible.</h2>
           </div>
           <figure class="paper-figure framed-figure" data-reveal>
-            <img src="images/figure5.jpg" alt="Tool-using agent execution flow with a transparency substrate.">
-            <figcaption><strong>Figure 5.</strong> Tool-using agent execution flow with transparency substrate.</figcaption>
+            <img src="images/five-axis.png" alt="Tool-using agent flow from plan to tool use to synthesis, with dashed provenance into the Minimal Explanation Packet.">
+            <figcaption><strong>Figure 7.</strong> Tool-using agent. Solid arrows show the execution flow (plan → tool use → synthesis). Dashed arrows show the provenance that each stage contributes to the outcome-time Minimal Explanation Packet (MEP), which supports replay, verification, and stakeholder-specific views.</figcaption>
           </figure>
         </div>
       </section>
@@ -341,7 +331,8 @@
               <pre><code id="bibtex">@article{raza2026transparency,
   title={Transparency in Agentic AI: A Survey of Interpretability, Explainability, and Governance},
   author={Raza, Shaina and Radwan, Ahmed Y and Chaduvula, Sindhuja and Alinoori, Mahshid and Emmanouilidis, Christos},
-  year={2026}
+  year={2026},
+  url={https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7030899}
 }</code></pre>
               <button class="copy-button" type="button" data-copy data-copy-target="bibtex">
                 <span data-copy-label>Copy BibTeX</span>
