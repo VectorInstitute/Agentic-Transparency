@@ -106,13 +106,14 @@
   --white: #ffffff;
   --line: #e9e8e8;
   --surface: #f1f1f1;
-  --magenta: #e00087;
-  --magenta-hover: #c40076;
+  --magenta: #eb088a;
+  --magenta-light: #f252a5;
+  --magenta-hover: #b00068;
   --cobalt: #313cff;
   --violet: #8a25c9;
-  --turquoise: #1788a0;
+  --turquoise: #48c0d9;
   --tangerine: #ff9e00;
-  --gradient-primary: linear-gradient(90deg, #e00087 0%, #313cff 100%);
+  --gradient-primary: linear-gradient(90deg, #eb088a 0%, #313cff 100%);
   --radius: 1.25rem;
   --shadow: 0 18px 60px rgb(0 0 0 / 10%);
   --shell: min(1160px, calc(100% - 3rem));
@@ -318,10 +319,10 @@ h3 {
   overflow: hidden;
   border-radius: 1.25rem 1.25rem 0 0;
   background:
-    radial-gradient(ellipse 70% 80% at 12% 20%, #ffb3d8 0%, transparent 58%),
+    radial-gradient(ellipse 70% 80% at 12% 20%, var(--magenta-light) 0%, transparent 58%),
     radial-gradient(ellipse 65% 75% at 88% 12%, #9eb6ff 0%, transparent 55%),
-    radial-gradient(ellipse 55% 70% at 72% 88%, #e93592 0%, transparent 52%),
-    linear-gradient(150deg, #f7c4e2 0%, #c9b6ff 48%, #8aa4ff 100%);
+    radial-gradient(ellipse 55% 70% at 72% 88%, var(--magenta) 0%, transparent 52%),
+    linear-gradient(150deg, var(--magenta-light) 0%, #c9b6ff 48%, #8aa4ff 100%);
 }
 
 .hero-panel::before {
@@ -364,7 +365,7 @@ h3 {
 }
 
 .hero h1 em {
-  color: #b71f72;
+  color: var(--magenta);
   font-style: italic;
   font-weight: 500;
 }
@@ -502,8 +503,8 @@ h3 {
 }
 
 .button-primary:hover {
-  background: #b71f72;
-  border-color: #b71f72;
+  background: var(--magenta-hover);
+  border-color: var(--magenta-hover);
   transform: translateY(-2px);
 }
 
@@ -670,28 +671,37 @@ h3 {
 
 /* 8. Stats and taxonomy */
 
-.stat-callout {
+.impact-stats {
   display: grid;
-  align-items: center;
-  grid-template-columns: auto 1fr;
-  gap: 1.5rem;
-  padding: 1.4rem 1.6rem;
-  background: var(--surface);
-  border-top: 3px solid var(--magenta);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 2rem 2.5rem;
+  margin: 0.5rem 0 0;
+  padding: 2.25rem 0 0;
+  list-style: none;
+  border-top: 1px solid var(--line);
 }
 
-.stat-callout strong {
+.impact-stats li {
+  margin: 0;
+}
+
+.impact-stats strong {
+  display: block;
+  color: var(--ink);
   font-family: var(--font-display);
-  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-size: clamp(2.75rem, 4.2vw, 4rem);
   font-weight: 500;
-  letter-spacing: -0.04em;
-  line-height: 0.9;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
 }
 
-.stat-callout span {
-  max-width: 36rem;
+.impact-stats span {
+  display: block;
+  max-width: 16rem;
+  margin-top: 0.85rem;
   color: var(--ink-soft);
-  font-size: var(--text-md);
+  font-size: var(--text-sm);
+  line-height: 1.45;
 }
 
 .axis-grid {
@@ -759,6 +769,33 @@ h3 {
   padding: 0.18rem 0;
   color: rgb(255 255 255 / 88%);
   font-size: var(--text-sm);
+}
+
+.axis-card.axis-how {
+  color: #15140f;
+}
+
+.axis-card.axis-how h3,
+.axis-card.axis-how .axis-label,
+.axis-card.axis-how p:last-of-type,
+.axis-card.axis-how li {
+  color: #15140f;
+}
+
+.axis-card.axis-how .axis-label {
+  color: rgb(21 20 15 / 62%);
+}
+
+.axis-card.axis-how p:last-of-type {
+  color: rgb(21 20 15 / 72%);
+}
+
+.axis-card.axis-how li {
+  color: rgb(21 20 15 / 88%);
+}
+
+.axis-card.axis-how::after {
+  border-color: rgb(21 20 15 / 16%);
 }
 
 /* 9. Findings and contributions */
@@ -1007,6 +1044,7 @@ h3 {
     margin: 0 1.25rem 1.5rem;
   }
 
+  .impact-stats,
   .gap-grid {
     grid-template-columns: 1fr 1fr;
   }
@@ -1093,7 +1131,7 @@ h3 {
   }
 
   .axis-grid,
-  .stat-callout,
+  .impact-stats,
   .gap-grid {
     grid-template-columns: 1fr;
   }
